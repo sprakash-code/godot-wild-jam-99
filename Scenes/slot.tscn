@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bbl3mj7t8rfl3"]
+
+[ext_resource type="Script" uid="uid://cm8wpvmo4hvm8" path="res://Scripts/slot.gd" id="1_4v6ba"]
+
+[node name="slot" type="Panel" unique_id=2010546238]
+self_modulate = Color(1, 1, 1, 0)
+offset_right = 107.0
+offset_bottom = 80.0
+script = ExtResource("1_4v6ba")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1599122765]
+self_modulate = Color(1, 1, 1, 0.2)
+layout_mode = 0
+offset_right = 107.0
+offset_bottom = 80.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="mouse_entered" from="Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="Button" to="." method="_on_button_mouse_exited"]

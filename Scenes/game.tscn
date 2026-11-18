@@ -1,3 +1,26 @@
 [gd_scene format=3 uid="uid://3bnppfkt0ifq"]
 
+[ext_resource type="PackedScene" uid="uid://cubbfr0c4b5p" path="res://Scenes/grid.tscn" id="1_ebmjs"]
+[ext_resource type="Texture2D" uid="uid://6w0k438vru4y" path="res://Art/charred-wood-boards-001.png" id="1_qxrlw"]
+
 [node name="Game" type="Node2D" unique_id=205339470]
+
+[node name="BG_Wood" type="Sprite2D" parent="." unique_id=1859081925]
+position = Vector2(0.9999652, -1.0000014)
+scale = Vector2(1.1289063, 1.1289063)
+texture = ExtResource("1_qxrlw")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1329759614]
+
+[node name="grid" parent="." unique_id=1968628819 instance=ExtResource("1_ebmjs")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -240.0
+offset_right = 320.0
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
