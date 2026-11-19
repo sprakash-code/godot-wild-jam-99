@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://crh1pf601ijfg"]
+
+[ext_resource type="Script" uid="uid://xxuqws0ob7e7" path="res://Scripts/paper.gd" id="1_c7gsp"]
+[ext_resource type="Texture2D" uid="uid://yc63ac0ahtlw" path="res://Art/11452346.png" id="2_322pb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6bkwl"]
+size = Vector2(123, 191)
+
+[node name="paper" type="Area2D" unique_id=254834240]
+script = ExtResource("1_c7gsp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=287237391]
+shape = SubResource("RectangleShape2D_6bkwl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1745441065]
+position = Vector2(-3.5, 0.5)
+rotation = 1.5707964
+scale = Vector2(0.07, 0.07)
+texture = ExtResource("2_322pb")

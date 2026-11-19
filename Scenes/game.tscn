@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://cubbfr0c4b5p" path="res://Scenes/grid.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://6w0k438vru4y" path="res://Art/charred-wood-boards-001.png" id="1_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://crh1pf601ijfg" path="res://Scenes/paper.tscn" id="3_wrm1d"]
 
 [node name="Game" type="Node2D" unique_id=205339470]
 
@@ -24,3 +25,8 @@ offset_right = 320.0
 offset_bottom = 240.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="paper" parent="." unique_id=254834240 instance=ExtResource("3_wrm1d")]
+z_index = 10
+position = Vector2(436, 98)
+translucency = 0.95
