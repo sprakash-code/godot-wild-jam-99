@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://3bnppfkt0ifq"]
 
-[ext_resource type="PackedScene" uid="uid://cubbfr0c4b5p" path="res://Scenes/grid.tscn" id="1_ebmjs"]
 [ext_resource type="Texture2D" uid="uid://6w0k438vru4y" path="res://Art/charred-wood-boards-001.png" id="1_qxrlw"]
+[ext_resource type="PackedScene" uid="uid://cubbfr0c4b5p" path="res://Scenes/map_grid.tscn" id="2_3dryh"]
 [ext_resource type="PackedScene" uid="uid://crh1pf601ijfg" path="res://Scenes/paper.tscn" id="3_wrm1d"]
+[ext_resource type="PackedScene" uid="uid://cncjhqc0eh7hf" path="res://Scenes/lighter.tscn" id="4_3dryh"]
 
 [node name="Game" type="Node2D" unique_id=205339470]
 
@@ -13,7 +14,7 @@ texture = ExtResource("1_qxrlw")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1329759614]
 
-[node name="grid" parent="." unique_id=1968628819 instance=ExtResource("1_ebmjs")]
+[node name="map_grid" parent="." unique_id=1968628819 instance=ExtResource("2_3dryh")]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
@@ -30,3 +31,6 @@ grow_vertical = 2
 z_index = 10
 position = Vector2(436, 98)
 translucency = 0.95
+
+[node name="lighter" parent="." unique_id=829423366 instance=ExtResource("4_3dryh")]
+position = Vector2(-395, -236)

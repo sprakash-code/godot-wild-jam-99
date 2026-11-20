@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://cncjhqc0eh7hf"]
+
+[ext_resource type="Texture2D" uid="uid://dciyg72s10bh7" path="res://Art/wand.png" id="1_otgfe"]
+[ext_resource type="Script" uid="uid://d2vi3a43d0xv7" path="res://Scripts/lighter.gd" id="2_6roek"]
+
+[node name="lighter" type="Sprite2D" unique_id=829423366]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_otgfe")
+script = ExtResource("2_6roek")
+
+[node name="Button" type="Button" parent="." unique_id=1104500038]
+self_modulate = Color(1, 1, 1, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -256.0
+offset_top = -256.0
+offset_right = -256.0
+offset_bottom = -256.0
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+
+[connection signal="toggled" from="Button" to="." method="_on_button_toggled"]
